@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bfd11e9f4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <title>Chat Fun</title>
+</head>
+
+<body>
+    <div class="login hidden">
+        <form>
+            <div class="box-login">
+                <img src="./img/Logo V2.png" alt="Logo">
+            </div>
+            <div class="box-login">
+                <input type="text" name="name" class="" id="name" required>
+                <label for="name">Nom</label>
+                <span class="error_name">Nom invalide!</span>
+            </div>
+            <div class="box-login">
+                <input type="password" name="password" class="" id="password" required>
+                <label for="password">Mots de Passe</label>
+                <span class="error_password">Mots de Passe invalide!</span>
+            </div>
+            <div class="box-login">
+                <button type="submit">Connexion</button>
+            </div>
+        </form>
+    </div>
+    <div class="popup hidden">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>Nouveau discussion</h2>
+                <span class="material-symbols-outlined popup-close">close</span>
+            </div>
+            <div class="popup-box">
+                <!-- Lister de ses amis -->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="nav">
+            <img src="./img/Logo V2.png" alt="Logo chat">
+            <div class="nav-icons">
+                <p class="nav-btn white select" tooltip="Messages" id="messages"><i class="fa-regular fa-message"></i>
+                </p>
+                <p class="nav-btn white" tooltip="Groupes" id="group"><i class="fa-solid fa-user-group"></i></p>
+                <p class="nav-btn white" tooltip="Diffusions" id="podcasts"><i class="fa-solid fa-tower-broadcast"></i>
+                </p>
+                <p class="nav-btn white" tooltip="Archives" id="archive"><i class="fa-solid fa-box-archive"></i></p>
+                <p class="nav-btn white" tooltip="Nouveau" id="add_box"><i class="fa-solid fa-plus"></i></p>
+            </div>
+            <div class="nav-logout">
+                <p class="nav-btn white" tooltip="Déconnexion" id="logout"><i
+                        class="fa-solid fa-right-from-bracket"></i>
+                </p>
+                <img src="./img/product1.jpg" alt="">
+            </div>
+        </div>
+        <div class="nav-friend">
+            <div class="nav-head">
+                <h1></h1>
+                <span class="material-symbols-outlined open-new-discuss" title="Nouvelle conversation">edit_square</span>
+            </div>
+            <div class="nav-search">
+                <label for="search"><span class="material-symbols-outlined">search</span></label>
+                <input type="search" name="search" id="search" placeholder="Search here...">
+            </div>
+            <div class="nav-all-user">
+                <!-- Affiche la liste des amis -->
+            </div>
+        </div>
+        
+        <div class="hero-chat hidden">
+            <div class="hero-nav">
+                <!-- Nom et État de la personne cliquer -->
+            </div>
+            <div class="hero-message">
+                <!-- Détails des messages envoyer par utilisateur -->
+            </div>
+            <div class="hero-input-message">
+                <textarea id="message" required></textarea>
+                <div class="send-msg">
+                    <span class="material-symbols-outlined white">send</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="profile">
+            test
+        </div> -->
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
